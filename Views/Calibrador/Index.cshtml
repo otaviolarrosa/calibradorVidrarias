@@ -1,0 +1,119 @@
+@model app.Models.Calibrador
+
+ <form class="form-horizontal" action="/Calibrador/Calcular" method="post">
+   <fieldset>
+       <legend>Calibração de Vidrarias</legend>
+       <div class="panel panel-primary">
+         <div class="panel-heading">
+             <h3 class="panel-title">Temperatura</h3>
+         </div>
+         <div class="panel-body">
+             <div class="form-group">
+                 <label for="Temperatura" class="col-lg-2 control-label">Temperatura</label>
+                 <div class="col-lg-10">
+                     <select class="form-control" name="Temperatura">
+                     <option>0</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                     </select>
+                 </div>
+             </div>
+         </div>
+       </div>
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <h3 class="panel-title">Primeira Pesagem</h3>
+         </div>
+         <div class="panel-body">
+             <div class="form-group">
+                 <label for="inputPesoCopoVazio" class="col-lg-2 control-label">Peso do copo vazio</label>
+                 <div class="col-lg-10">
+                      <input type="text" class="form-control" name="PesoCopoVazioPrimeiraPesagem" placeholder="Peso do copo vazio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Peso do copo cheio</label>
+                 <div class="col-lg-10">
+                     <input type="text" class="form-control" name="PesoCopoCheioPrimeiraPesagem" placeholder="Peso do copo cheio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <h3 class="panel-title">Segunda Pesagem</h3>
+         </div>
+         <div class="panel-body">
+             <div class="form-group">
+                 <label for="inputPesoCopoVazio" class="col-lg-2 control-label">Peso do copo vazio</label>
+                 <div class="col-lg-10">
+                     <input type="text" class="form-control" name="PesoCopoVazioSegundaPesagem" placeholder="Peso do copo vazio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Peso do copo cheio</label>
+                 <div class="col-lg-10">
+                     <input type="text" class="form-control" name="PesoCopoCheioSegundaPesagem" placeholder="Peso do copo cheio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+         </div>
+     </div>
+ 
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <h3 class="panel-title">Terceira Pesagem</h3>
+         </div>
+         <div class="panel-body">
+             <div class="form-group">
+                 <label for="inputPesoCopoVazio" class="col-lg-2 control-label">Peso do copo vazio</label>
+                 <div class="col-lg-10">
+                     <input type="text" class="form-control" name="PesoCopoVazioTerceiraPesagem" placeholder="Peso do copo vazio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Peso do copo cheio</label>
+                 <div class="col-lg-10">
+                     <input type="text" class="form-control" name="PesoCopoCheioTerceiraPesagem" placeholder="Peso do copo cheio" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="form-group">
+         <div class="col-lg-10 col-lg-offset-2">
+         <a href="/Home/Index/" class="btn btn-danger">Voltar</a>
+         <button type="submit" class="btn btn-primary">Calcular</button>
+     </div>
+   </fieldset>
+ </form>

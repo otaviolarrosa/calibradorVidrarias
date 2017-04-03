@@ -1,0 +1,31 @@
+@model app.Models.Resultado
+
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">Desvio de Média</h3>
+        </div>
+        <br>
+        <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Desvio de Média Real(Média)</label>
+        <div class="panel-body">
+            <div class="well">
+                @Model.DesvioDeMedia
+            </div>
+            <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Primeiro Desvio de Média</label>
+            <div class="well">
+              @Model.PrimeiroDesvioDeMedia
+            </div>
+            <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Segundo Desvio de Média</label>
+            <div class="well">
+              @Model.SegundoDesvioDeMedia
+            </div>
+            <label for="inputPesoCopoCheio" class="col-lg-2 control-label">Terceiro Desvio de Média</label>
+            <div class="well">
+              @Model.TerceiroDesvioDeMedia
+            </div>
+            <a href="/Home/Index/" class="btn btn-danger">Voltar</a>
+        </div>
+    </div>   
